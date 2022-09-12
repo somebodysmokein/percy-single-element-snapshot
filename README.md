@@ -36,3 +36,20 @@ Use the CSS script on the percy snapshot command witht he "Scope" parameter. Sco
     percy.snapshot("Single DOM Element",Arrays.asList(new Integer[]{375, 480, 720, 1280, 1440, 1920}),
                 null,false,null,"#signupModalButton");
 ```
+
+### To run the sample please follow the below steps
+
+ - Create a project in Percy and get the PERCY_TOKEN
+ - Set the environment variables  by running the following command
+
+     ```
+        export PERCY_TOKEN=<Unique Toke> && export BASE_URL=https://www.browserstack.com
+     ```
+     
+ - Run `npm install` to install all the dependencies
+
+ - Trigger the Percy build by running the following command
+
+    ```
+        npm run test
+    ```    
