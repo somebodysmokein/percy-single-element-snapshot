@@ -32,7 +32,7 @@ Use the CSS script on the percy snapshot command witht he "Scope" parameter. Sco
 
 ### **Usage :**
 
-	```
-		percy.snapshot("Single DOM Element",Arrays.asList(new Integer[]{375, 480, 720, 1280, 1440, 1920}),
+```
+    percy.snapshot("Single DOM Element",Arrays.asList(new Integer[]{375, 480, 720, 1280, 1440, 1920}),
                 null,false,null,"#signupModalButton");
-	```	
+```
