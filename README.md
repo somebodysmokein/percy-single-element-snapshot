@@ -2,11 +2,9 @@
 Example project for Single Element Snapshot for Java
 
 
-### Install the dependencies
+### Install the dependencies 
 
-To install the dependencies, run :
-
-- Percy CLI
+- To install Percy CLI, run the below command
 
     ```
     npm i @percy/cli
@@ -22,13 +20,14 @@ To install the dependencies, run :
     </dependency>
     ```
 
+[Note: All the Dependencies are included in the sample script]
 
 
 ## Steps to take a snapshot of the element
 
 - Navigate to the page where the element is located
 - Identify the CSS locator for the element 
-- Use the CSS script on the percy snapshot command witht he "Scope" parameter. Scope parameter is a String type. 
+- Add the CSS selector to the "Scope" parameter(last parameter in the snapshot method) of the percy snapshot method. Scope parameter accepts String types. 
 
 ### **Usage :**
 
@@ -37,13 +36,15 @@ To install the dependencies, run :
                 null,false,null,"#signupModalButton");
 ```
 
+In the above example `#signupModalButton` is the CSS selector of a button in the Home Page https://www.browserstack.com
+
 ### To run the sample please follow the below steps
 
  - Create a project in Percy and get the PERCY_TOKEN
  - Set the environment variables  by running the following command
 
      ```
-        export PERCY_TOKEN=<Unique Toke> && export BASE_URL=https://www.browserstack.com
+        export PERCY_TOKEN=<Unique Token> && export BASE_URL=https://www.browserstack.com
      ```
      
  - Run `npm install` to install all the dependencies
