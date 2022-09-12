@@ -26,9 +26,9 @@ To install the dependencies, run :
 
 ## Steps to take a snapshot of the element
 
-Navigate to the page where the element is located
-Identify the CSS locator for the element 
-Use the CSS script on the percy snapshot command witht he "Scope" parameter. Scope parameter is a String type. 
+- Navigate to the page where the element is located
+- Identify the CSS locator for the element 
+- Use the CSS script on the percy snapshot command witht he "Scope" parameter. Scope parameter is a String type. 
 
 ### **Usage :**
 
