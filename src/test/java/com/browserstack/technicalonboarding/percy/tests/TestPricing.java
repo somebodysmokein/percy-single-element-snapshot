@@ -18,5 +18,7 @@ public class TestPricing extends TestRunner{
 		pg.goToUrl();
 		assertEquals(driver.getTitle(), pg.getPricingTitle());
 		percy.snapshot("Pricing Page Test",Arrays.asList(new Integer[]{375, 480, 720, 1280, 1440, 1920}));
+		percy.snapshot("Single DOM Element-Pricing",Arrays.asList(new Integer[]{375, 480, 720, 1280, 1440, 1920}),
+		null,false,null, "#product_options_chosen");
 	}
 }
